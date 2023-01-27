@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Calculadora e Gorjetas</title>
 </head>
 <body>
+    <div id="container">
     <div>
-        <h1>Calculadora de Gorjeta</h1>
+        <h1 class="title">Calculadora de Gorjeta</h1>
     </div>
     <div>
-        <form action="">
+        <form action="" class="tipsForm">
             <label for="bill">
                 <p>Quanto ficou a conta?</p>
             </label>
-            <p>R$: <input type="number" placeholder="100" name="bill" id="bill"></p>
+            <p>
+                R$: <input type="number" placeholder="100" name="bill" id="bill" class="formInput">
+            </p>
             <label for="serviceQual">
                 <p>Como foi seu serviço?</p>
             </label>
             <p>
-                <select name="serviQual" id="serviceQual">
+                <select name="serviQual" id="serviceQual" class="formSelect">
                     <option disabled selected>-- Escolha uma opção</option>
                     <option value="0.3">30%-Incrível</option>
                     <option value="0.2">20%-Bom</option>
@@ -33,10 +37,11 @@
                 <p>Quantas vão dividir a conta?</p>
             </label>
             <p>
-                pessoa(a): <input type="number" placeholder="1" name="people" id="people"> 
+                pessoa(a): <input type="number" placeholder="1" name="people" id="people" class="formInput"> 
             </p>
-            <input type="submit" name="people" value="Calcular!">
+            <input type="submit" name="people" value="Calcular!" class="formSubmit">
         </form>
     </div>
+</div>
 </body>
 </html>

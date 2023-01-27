@@ -1,0 +1,72 @@
+/* usando para importar fonte no site google usando '@import url();' */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|PT++Mono);
+
+:root{ /* ':root' usado quando quero especificar estilo individual dentro do 'body{ }'*/
+    --primary-color:lightcoral; /*declaração */
+    --secundary--color: dimgrey; 
+    --tertialy--color: gainsboro;
+}
+
+body{
+    background-color: var(--primary-color); /* usando 'var()' para especificar somente nele */
+    font-size: 15px;
+    font-family:Lato, sans-serif; /* vc usa fonte 'Lato' importado normal q vai aparecer */
+}
+
+#container{ /* no html tem 'div' com parametro 'id="container"', com uso 'id' p/ chamada é '#' */
+    height: 525px;
+    width: 300px;
+    margin: 100px auto; /* 'margin' espaço externo e usando 'auto' vai da espaço todos espaços, centraiza */
+    background-color: #f7f7f7; /* cor no corpo */
+   /*  box-shadow: 5px 5px var(--tertialy--color);  /* 'box-shadow' usado p/ colocar a borda */
+    border-radius: 20px; /* para deixa a borda arredondado */
+}
+
+.title{ /* usar '.' no css  quando usa no html atributo 'class' */
+    background-color: var(--tertialy--color); /* usando 'var()' como atalho ja declarado acima, muito util*/
+    color: var(--secundary--color); /* eu com preguiça definir com usei 'var()' acima declarada */
+    padding: 20px; /* da espaço interno todos cantos(cima, baixo, esquerda, direita)*/
+    
+    /* 'text-transform: ' é pra transformar formatação do texto tipo: capitalaze(1º letra maiuscula), lowercase(tudo minusculo), uppercase(tudo maiusculo) usado pra isso. */
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal; /* pra deixa texto grossa ou fina tipo negrito */
+    border-top-left-radius: 20px; /* colocar borda redondo no topo esquerda  */
+    border-top-right-radius: 20px; /* colocar borda redondo no topo direita  */
+    text-align: center; /*vai alinhar titulo no centro */
+}
+
+.tipsForm{ /* 'class="tipsForm" ' formulado dentro mostra texto e input estão colados */
+    padding-left: 20px; /* espaço interno da esquerda não deixar colado */
+    padding-right: 20px; 
+}
+
+.formInput{ /* são campos input */
+    background-color: white;
+    width: 40px;
+    padding: 5px 5px 8px 8px; /*espaço todos cantos de uma vez(top=cima)(right=esquerda)(button=baixo)(left=direita)*/
+}
+
+.formInput:focus{ /* muda estilo quando clica */
+    border: 3px solid var(--primary-color);
+}
+
+.formSelect{
+    width: 180px; /* aumentar largura da caixa selecionar opção*/
+    padding: 5px; /* da espaço interno geral todos cantos */
+    font-size: 12px;
+}
+
+.formSubmit{
+    text-transform: uppercase; /* transformar todo texto em maiusculo*/
+    font-weight: bold;
+    display:block; /* 'block' fica abaixo do elemento anterior e posterior*/
+    margin: 30px auto; /* centralizar botão*/
+    background-color: var(--primary-color); /*cor fundo botão  */
+    border-radius: 5px; /* vai pra todos cantos ser redonda*/
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: wheat;
+}
+/* */
