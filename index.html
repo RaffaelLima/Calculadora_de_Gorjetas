@@ -24,7 +24,7 @@
                 <p>Como foi seu serviço?</p>
             </label>
             <p>
-                <select name="serviQual" id="serviceQual" class="formSelect" required>
+                <select name="serviceQual" id="serviceQual" class="formSelect">
                     <option disabled selected>-- Escolha uma opção</option>
                     <option value="0.3">30%-Incrível</option>
                     <option value="0.2">20%-Bom</option>
@@ -36,21 +36,15 @@
             <label for="people">
                 <p>Quantas vão dividir a conta?</p>
             </label>
-            <p>
-                pessoa(a): <input type="number" placeholder="1" name="people" id="people" class="formInput" required> 
-            </p>
+            <p>pessoa(a): <input type="number" placeholder="1" name="people" id="people" class="formInput" required></p>
             <input type="submit" name="people" value="Calcular!" class="formSubmit">
         </form>
     </div>
     <div id="totalTip">
-        <p>
-            Gorjeta total: R$ <span id="tip">0.00</span>
-        </p>
-        <p id="cada">
-            Cada 
-        </p>
+        <p>Gorjeta total: R$ <span id="tip">0.00</span></p>
+        <p id="each">Cada</p>
     </div>
 </div>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
